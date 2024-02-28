@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageViewLogoDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ufg_2" />
+
+        <TextView
+            android:id="@+id/textViewTitleDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Universidad Francisco Gavidia"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/imageViewLogoDisplay"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textViewSubtitleDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registro de nuevo estudiante"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textViewTitleDisplay"
+            android:textSize="14sp"/>
+
+        <!-- Aquí van los TextViews para mostrar los datos -->
+        <TextView
+            android:id="@+id/textViewNombreDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewSubtitleDisplay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textViewApellidoDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewNombreDisplay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textViewEmailDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewApellidoDisplay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/buttonExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewEmailDisplay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="Salir"/>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
